@@ -67,7 +67,7 @@ with col_left:
         ("S_Dp", "S (D<sub>p</sub>)", "Pile spacing", "2.5~3.5", 2.5, 3.5, 3.0, 0.1, "%.2f"),
         ("Dr", "D<sub>r</sub>", "Sand density", "0.35~0.75", 0.35, 0.75, 0.55, 0.05, "%.2f"),
         ("SD", "SD (m)", "Scour depth", "0~6", 0.0, 6.0, 3.0, 0.5, "%.2f"),
-        ("Hp_Dc", "H<sub>p</sub>/D<sub>c</sub>", "Column aspect ratio", "0~4", 0.0, 4.0, 2.0, 0.1, "%.2f"),
+        ("Hp_Dc", "H<sub>p</sub>/D<sub>c</sub>", "Column aspect ratio", "1~4", 1.0, 4.0, 2.5, 0.1, "%.2f"),
         ("Dc_Dp", "D<sub>c</sub> (D<sub>p</sub>)", "Column diameter", "1.5~2.5", 1.5, 2.5, 2.0, 0.1, "%.2f"),
         ("rho_cl", "ρ<sub>column,l</sub>", "Column longitudinal reinforcement ratio", "0.005~0.015", 0.005, 0.015, 0.010, 0.001, "%.3f"),
         ("rho_ps", "ρ<sub>pile,s</sub>", "Pile transverse reinforcement ratio", "0.003~0.013", 0.003, 0.013, 0.008, 0.001, "%.3f"),
