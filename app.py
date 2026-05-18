@@ -48,7 +48,7 @@ col_left, spacer, col_right = st.columns([5.5, 0.5, 4])
 
 # ----------------- 左侧：19个参数 4列布局区 -----------------
 with col_left:
-    st.markdown("<h4 style='color: #333;'>Input: Bridge design parameters</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color: #333;'>Input: Bridge parameters</h4>", unsafe_allow_html=True)
     
     # 表头设计
     h1, h2, h3, h4 = st.columns([1.5, 3.5, 1.5, 1.5])
@@ -107,7 +107,7 @@ with col_right:
     # 作者信息 (通过 margin-top 往下微调位置)
     st.markdown("""
         <div style='text-align: right; color: #555555; line-height: 1.5; font-family: Arial; font-size: 14px; margin-top: 25px;'>
-            Created by Jingcheng Wang, Associate Professor.<br>Fuzhou University
+            Created by Jingcheng Wang, Associate Professor. Fuzhou University<br>Contact:Jingchengwang@fzu.edu.cn
         </div>
     """, unsafe_allow_html=True)
     st.write("")
@@ -171,9 +171,10 @@ with col_right:
     draw_progress_bar("FFF (Foundation Flexure Failure)", probs[1] * 100, "#008000") # 绿
     draw_progress_bar("PSF (Pier Shear Failure)", probs[2] * 100, "#d83b01") # 红
 
-    st.write("---")
+    # st.write("---")
     
     # 结构示意图加载
+    st.markdown("<h5 style='color: #333; font-family: Arial; font-weight: bold; margin-bottom: 10px;'>Parameter Schematic</h5>", unsafe_allow_html=True)
     try:
         st.image("structure.png", use_container_width=True)
     except:
